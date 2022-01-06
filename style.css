@@ -1,0 +1,216 @@
+body{
+
+    height: 100vh;
+    width:auto;
+    background-image: url("https://wallpaperaccess.com/full/660691.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+    color:white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    display: flex;
+}
+.menuItems ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menuItems ul li{
+    margin: 10px 20px;
+    cursor: pointer;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin: 60px 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    flex: 2;
+    align-self: center;
+    
+    transform: translate(10%,-15%);
+}
+.login-form{
+    background-color: rgb(2, 2, 34,0.7);
+    border-radius: 25px;
+    height:500px;
+    width: 280px;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login-form input{
+    width:80%;
+    margin: 10px auto;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0px 10px;
+    background-color: transparent;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social>i{
+    font-size: 30px;
+    margin: 10px;
+}
+.logo>h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.logo{
+    margin: 0px 20px;
+    
+}
+.login{
+    height:40px;
+    width:80%;
+    margin: 15px auto;
+    background-color: rgb(247, 102, 6);
+    border-top:2px solid orange;
+    border-left:2px solid orange;
+    border-bottom: none;
+    border-right: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+.join-us{
+    height: 38px;
+    width:100px;
+    background-color: rgb(247, 102, 6);
+    border-bottom:2px solid orange;
+    border-right:2px solid orange;
+    border-top: none;
+    border-left: none;
+    font-size: medium;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    margin: 20px auto;
+    
+}
+
+.search{
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: transparent;
+     border:0.1px solid rgb(199, 108, 47);
+     height:40px;
+     border-radius: 7px;
+     padding: 0;
+     width: 280px;
+     
+}
+.search>input{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    flex:9;
+}
+.search .icon{
+    flex:1;
+    margin-right:10px;
+   
+    background-color: rgb(199, 108, 47);
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    border :1px solid rgb(199, 108, 47);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+    }
+    .menu{
+        display:hidden;
+    }
+    .icon>i{
+        font-size: 15px;
+        
+    }
+    h1:first-child{
+        font-size: 40px;
+        letter-spacing: 1px;
+        color: white;
+    }
+    section>h1{
+        font-size: 50px;
+        letter-spacing: 2px;
+        color: rgb(243, 221, 21);
+        line-height: 15px;
+        
+    
+    }
+section>p{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+    
+}
+.login-logo{
+    margin: 0px auto;
+    
+}
+a{color: orange;
+text-decoration: none;}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 800px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuItems>ul{
+        flex-direction: column;
+        display: none;
+    }
+    section{
+        display: none;
+    }
+    aside{width: 80%;
+    }
+    .menu{
+        
+        display: block;
+        font-size: 30px;
+        transform: translateX(-50%);
+    }
+    .logo{display: flex;
+    align-items: center;
+     justify-content: space-around;}
+     .menu:hover{
+        color:rgb(255, 196, 0);
+     }
+     .menu:hover .menuItems>ul{
+         display: flex;
+     }
+
+  }
